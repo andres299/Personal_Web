@@ -1,0 +1,176 @@
+body {
+    background-color: rgba(248, 247, 241, 1);
+}
+
+.header-container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navar {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.boton {
+    background-color: rgba(161, 193, 70, 1);
+    color: white;
+    padding: 10px 20px;
+    border-width: 1px;
+    border-color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+}
+
+.boton:hover {
+    background-color: rgba(0, 100, 0, 1);
+}
+
+.boton a {
+    text-decoration: none !important;
+    list-style: none;
+    color: #fff !important;
+    font-size: 25px;
+    font-family: 'Lemon', sans-serif;
+}
+
+
+.logo {
+    max-width: 100px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    /* Que sea en la parte de*/
+    bottom: 0;
+}
+
+
+/*Aqui ira el contenido de la pagina */
+.center-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 45px;
+    max-width: 800px;
+    flex-direction: row; /* Cambia la dirección de flexión a "fila" para que el contenido se extienda en ancho */
+    margin-bottom: 20px;
+}
+
+.left-content,.right-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-content h1,.left-content li,.left-content p,.left-content .boton-trabajo {
+    text-align: left; 
+}
+
+.left-content h1 {
+    font-size: 30px;
+    font-family: 'Lemon', sans-serif;/* Aplica la fuente Lemon */
+}
+
+.left-content li,.left-content p {
+    font-size: 20px;
+    font-family: 'Lao Sans Pro', sans-serif;
+}
+
+.right-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Estilo para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .navar {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+        font-size: 32px;
+        padding: 15px 20px;
+    }
+
+    .mobile-menu {
+        list-style: none;
+        background-color: #333;
+        color: #fff;
+        position: absolute;
+        top: 115px;
+        right: 0;
+        text-align: center;
+        display: none;
+        padding: 0;
+    }
+
+    .mobile-menu li {
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-menu li a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-family: 'Lemon', sans-serif;
+    }
+
+    .mobile-menu li a:hover {
+        background-color: rgba(0, 100, 0, 1);
+    }
+
+    /* Estilo para el botón del menú desplegable */
+    #mobile-menu-button {
+        cursor: pointer;
+    }
+
+    .center-content {
+        flex-direction: column; /* Cambia la dirección de flexión a "columna" para móviles */
+        text-align: center;
+    }
+
+    .left-content,
+    .right-content {
+        padding: 20px;
+    }
+
+    .right-content img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Estilo para pantallas más grandes */
+@media screen and (min-width: 769px) {
+    .menu-button {
+        display: none;
+        /* Oculta el botón de menú en pantallas más grandes */
+    }
+
+    .mobile-menu {
+        display: none;
+        /* Muestra la barra de navegación en pantallas más grandes */
+    }
+}

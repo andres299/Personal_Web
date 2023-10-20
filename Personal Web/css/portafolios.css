@@ -1,0 +1,208 @@
+body {
+    background-color: rgba(248, 247, 241, 1);
+}
+
+.header-container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navar {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    /* Alinea verticalmente los elementos de navegación */
+}
+
+.boton {
+    background-color: rgba(161, 193, 70, 1);
+    color: white;
+    padding: 10px 20px;
+    border-width: 1px;
+    border-color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    /* Quita el subrayado de los enlaces */
+    list-style: none;
+}
+
+.boton:hover {
+    background-color: rgba(0, 100, 0, 1);
+}
+
+.boton a {
+    text-decoration: none !important;
+    /* Quita el subrayado de los enlaces */
+    list-style: none;
+    color: #fff !important;
+    font-size: 25px;
+    font-family: 'Lemon', sans-serif;
+    /* Aplica la fuente Lemon */
+}
+
+
+.logo {
+    max-width: 100px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    /* Que sea en la parte de*/
+    bottom: 0;
+}
+
+
+/*Aqui ira el contenido de la pagina */
+.introducion {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Lao Sans Pro', sans-serif;
+    text-align: center;
+}
+
+.trabajos h1 {
+    font-size: 20x;
+    margin-top: 10px;
+    font-family: 'Alfa Slab One', cursive !important;
+}
+
+.trabajos p {
+    font-size: 17px;
+    font-family: 'Lao Sans Pro', sans-serif;
+    margin-top: 5px;
+}
+
+.container-trabajo {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.trabajos {
+    width: 30%;
+    padding: 10px;
+    background-color: rgba(250, 238, 169, 1);
+    border-radius: 10px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .navar {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+        font-size: 32px;
+        padding: 15px 20px;
+    }
+
+    .mobile-menu {
+        list-style: none;
+        background-color: #333;
+        color: #fff;
+        position: absolute;
+        top: 115px;
+        right: 0;
+        text-align: center;
+        display: none;
+        padding: 0;
+    }
+
+    .mobile-menu li {
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-menu li a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-family: 'Lemon', sans-serif;
+    }
+
+    .mobile-menu li a:hover {
+        background-color: rgba(0, 100, 0, 1);
+    }
+
+    /* Estilo para el botón del menú desplegable */
+    #mobile-menu-button {
+        cursor: pointer;
+    }
+
+    .container-trabajo {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        /* Agrega flex-wrap para permitir que los elementos se envuelvan en dispositivos móviles */
+        margin: 20px;
+    }
+
+    .trabajos {
+        width: 80%;
+        /* Establece el ancho al 100% para que ocupen todo el ancho disponible */
+        padding: 10px;
+        background-color: rgba(250, 238, 169, 1);
+        border-radius: 10px;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .trabajos h1 {
+        font-size: 20px;
+        margin-top: 10px;
+        font-family: 'Alfa Slab One', cursive;
+    }
+
+    footer {
+        bottom: 0;
+    }
+
+    .introducion {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+        font-family: 'Lao Sans Pro', sans-serif;
+        text-align: center;
+    }
+
+}
+
+/* Estilo para pantallas más grandes */
+@media screen and (min-width: 769px) {
+    .menu-button {
+        display: none;
+        /* Oculta el botón de menú en pantallas más grandes */
+    }
+
+    .mobile-menu {
+        display: none;
+        /* Muestra la barra de navegación en pantallas más grandes */
+    }
+}
