@@ -13,12 +13,21 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //Validar si los campos hay informacion.document.getElementById("miContacto").addEventListener("submit", function (event) {
-document.getElementById("miContacto").addEventListener("submit", function (event) {
-    var emailTelefono = document.getElementById("#emailTelefono").value;
-    var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("miContacto");
+    const emailTelefonoInput = document.getElementById("email");
 
-    if (!emailRegex.test(emailTelefono)) {
-        alert("Por favor, ingrese una dirección de correo electrónico válida.");
-        event.preventDefault(); // Evita el envío del formulario si la validación falla.
+    form.addEventListener("submit", function (event) {
+        if (!validarEmailTelefono(emailTelefonoInput.value)) {
+            event.preventDefault(); // Evita el envío del formulario si no es válido
+            alert("Por favor, ingresa un correo electrónico válido.");
+        }
+    });
+
+    function validarEmailTelefono(valor) {
+        // Utilizamos una expresión regular para validar un correo electrónico o número de teléfono
+        const regexEmailTelefono = /^[\w\.-]+@[\w\.-]+\.\w+|^\d{10}$/;
+
+        return regexEmailTelefono.test(valor);
     }
-});    
+});  
