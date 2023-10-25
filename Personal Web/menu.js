@@ -12,39 +12,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-//Validar si los campos hay informacion.
-document.addEventListener("DOMContentLoaded", function() {
-    const formulario = document.getElementById("miContacto");
+//Validar si los campos hay informacion.document.getElementById("miContacto").addEventListener("submit", function (event) {
+document.getElementById("miContacto").addEventListener("submit", function (event) {
+    var emailTelefono = document.getElementById("#emailTelefono").value;
+    var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
-    formulario.addEventListener("submit", function(event) {
-        if (!validarFormulario()) {
-            event.preventDefault();
-        }else {
-            mostrarMensajeExito();
-        }
-    });
-
-    function validarFormulario() {
-        const emailTelefono = document.getElementById("emailTelefono");
-        const mensaje = document.getElementById("mensaje");
-        const terminos = document.querySelector('input[name="opcio"]');
-
-        if (!emailTelefono.value || !mensaje.value || !terminos.checked) {
-            alert("Por favor, complete todos los campos obligatorios.");
-            return false;
-        }
-
-        return true; 
+    if (!emailRegex.test(emailTelefono)) {
+        alert("Por favor, ingrese una dirección de correo electrónico válida.");
+        event.preventDefault(); // Evita el envío del formulario si la validación falla.
     }
-
-    function mostrarMensajeExito() {
-        const mensajeExito = document.getElementById("mensajeExito");
-        mensajeExito.textContent = "¡La información se ha enviado con éxito!";
-    }
-});
-
-
-
-
-
-
+});    
