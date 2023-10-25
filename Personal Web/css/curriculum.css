@@ -65,13 +65,14 @@ footer {
 /*Aqui ira el contenido de la pagina */
 .center-content {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
-    margin-left: 230px ;
     padding-top: 45px;
-    flex-direction: row; 
+    flex-direction: row;
     margin-bottom: 20px;
 }
+
 
 .right-content h1 {
     font-size: 40px;
