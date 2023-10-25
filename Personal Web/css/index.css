@@ -56,7 +56,7 @@ footer {
     width: 100%;
     text-align: center;
     padding: 10px;
-    position: absolute;
+    position: relative;
     /* Que sea en la parte de*/
     bottom: 0;
 }
