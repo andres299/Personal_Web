@@ -70,7 +70,7 @@ footer {
     padding-top: 45px;
     max-width: 800px;
     flex-direction: row; /* Cambia la dirección de flexión a "fila" para que el contenido se extienda en ancho */
-    margin-bottom: 20px;
+    margin-bottom: 42px;
 }
 
 .left-content,.right-content {
