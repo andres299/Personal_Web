@@ -201,9 +201,10 @@ footer {
     }
 
     .contact {
-        width: 90%; 
-        margin: 40px auto; 
-        padding: 10px; 
+        width: 90%;
+        margin: 40px auto;
+        padding: 10px;
+        text-align: center; /* Alinea el contenido al centro horizontalmente */
     }
 
     .contact input {
@@ -227,7 +228,7 @@ footer {
 
     .image {
         max-width: 50%; /* Reduce el tamaño de la imagen */
-        margin-left: 90px; 
+        margin: 0 auto !important ; /* Centra la imagen horizontalmente */
         padding-bottom: 10px; /* Reduce el espacio inferior */
     }
    
