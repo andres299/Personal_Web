@@ -56,7 +56,6 @@ footer {
     text-align: center;
     padding: 10px;
     position: relative;
-    /* Que sea en la parte de*/
     bottom: 0;
 }
 
@@ -69,7 +68,7 @@ footer {
     margin: 0 auto;
     padding-top: 45px;
     max-width: 800px;
-    flex-direction: row; /* Cambia la dirección de flexión a "fila" para que el contenido se extienda en ancho */
+    flex-direction: row; 
     margin-bottom: 42px;
 }
 
@@ -84,7 +83,7 @@ footer {
 
 .left-content h1 {
     font-size: 30px;
-    font-family: 'Lemon', sans-serif;/* Aplica la fuente Lemon */
+    font-family: 'Lemon', sans-serif;
 }
 
 .left-content li,.left-content p {
@@ -146,7 +145,7 @@ footer {
     }
 
     .center-content {
-        flex-direction: column; /* Cambia la dirección de flexión a "columna" para móviles */
+        flex-direction: column; 
         text-align: center;
     }
 
@@ -165,11 +164,9 @@ footer {
 @media screen and (min-width: 769px) {
     .menu-button {
         display: none;
-        /* Oculta el botón de menú en pantallas más grandes */
     }
 
     .mobile-menu {
         display: none;
-        /* Muestra la barra de navegación en pantallas más grandes */
     }
 }
