@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
     
         form.addEventListener("submit", function (event) {
             if (!validarEmailTelefono(emailTelefonoInput.value)) {
-                event.preventDefault(); // Evita el envío del formulario si no es válido
+                event.preventDefault(); 
                 errorElement.textContent = "Por favor, ingresa un correo electrónico válido.";
             } else {
-                errorElement.textContent = ""; // Limpia el mensaje de error si es válido
+                errorElement.textContent = ""; 
             }
         });
     
