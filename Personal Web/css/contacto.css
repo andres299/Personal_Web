@@ -28,7 +28,6 @@ body {
     border-color: #333;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none;
     list-style: none;
 }
 
@@ -36,9 +35,8 @@ body {
     background-color: rgba(0, 100, 0, 1);
 }
 
-.boton a {
+.navar a {
     text-decoration: none !important;
-    list-style: none;
     color: #fff !important;
     font-size: 25px;
     font-family: 'Lemon', sans-serif;
