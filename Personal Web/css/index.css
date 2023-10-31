@@ -28,7 +28,6 @@ body {
     border-color: #333;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none;
     list-style: none;
 }
 
@@ -36,10 +35,9 @@ body {
     background-color: rgba(0, 100, 0, 1);
 }
 
-.boton a {
-    text-decoration: none !important;
-    list-style: none;
-    color: #fff !important;
+.navar a {
+    text-decoration: none ;
+    color: #fff ;
     font-size: 25px;
     font-family: 'Lemon', sans-serif;
 }
@@ -96,6 +94,12 @@ footer {
     height: auto;
 }
 
+.center-content a{
+    text-decoration: none ;
+    color: #fff ;
+    font-size: 25px;
+    font-family: 'Lemon', sans-serif;
+}
 
 /* Estilo para dispositivos móviles */
 @media screen and (max-width: 768px) {
