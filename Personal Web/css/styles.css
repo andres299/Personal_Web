@@ -1,0 +1,116 @@
+body {
+    background-color: rgba(248, 247, 241, 1);
+}
+
+.header-container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navar {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.boton {
+    background-color: rgba(161, 193, 70, 1);
+    color: white;
+    padding: 10px 20px;
+    border-width: 1px;
+    border-color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.boton:hover {
+    background-color: rgba(0, 100, 0, 1);
+}
+
+.navar a {
+    text-decoration: none ;
+    color: #fff ;
+    font-size: 25px;
+    font-family: 'Lemon', sans-serif;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+}
+
+/* Estilo para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .navar {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+        font-size: 32px;
+        padding: 15px 20px;
+    }
+
+    .mobile-menu {
+        list-style: none;
+        background-color: #333;
+        color: #fff;
+        position: absolute;
+        top: 115px;
+        right: 0;
+        text-align: center;
+        display: none;
+        padding: 0;
+    }
+
+    .mobile-menu li {
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-menu li a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-family: 'Lemon', sans-serif;
+    }
+
+    .mobile-menu li a:hover {
+        background-color: rgba(0, 100, 0, 1);
+    }
+
+    #mobile-menu-button {
+        cursor: pointer;
+    }
+}
+
+/* Estilo para pantallas más grandes */
+@media screen and (min-width: 769px) {
+    .menu-button {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+}
