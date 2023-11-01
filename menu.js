@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
 //Validar si en los campos hay informacion , formulario de contacto.
     document.addEventListener("DOMContentLoaded", function () {
         const form = document.getElementById("miContacto");
