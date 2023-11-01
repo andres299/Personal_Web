@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-Window .addEventListener("load", () => {
+window .addEventListener("load", () => {
     document.querySelector("nav button").addEventListener("click", () => {
         document.querySelector("nav ul").classList.toggle("active");
     });
