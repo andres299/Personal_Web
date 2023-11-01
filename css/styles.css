@@ -36,8 +36,8 @@ body {
 }
 
 .navar a {
-    text-decoration: none !important;
-    color: #fff !important;
+    text-decoration: none;
+    color: #fff;
     font-size: 25px;
     font-family: 'Lemon', sans-serif;
 }
