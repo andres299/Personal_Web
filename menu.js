@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         form.addEventListener("submit", function (event) {
             if (!validarEmailTelefono(emailTelefonoInput.value)) {
                 event.preventDefault(); 
-                errorElement.textContent = "Por favor, ingresa un correo electrónico válido(a@.com)";
+                errorElement.textContent = "Por favor, ingresa un correo electrónico válido(a@a.com)";
             } else {
                 errorElement.textContent = ""; 
             }
