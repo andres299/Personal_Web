@@ -42,7 +42,7 @@
 }
 
 /* Estilo para dispositivos móviles */
-@media screen and (max-width: 824px) {
+@media screen and (max-width: 833px) {
     .center-content {
         flex-direction: column; 
         text-align: center;

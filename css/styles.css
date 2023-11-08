@@ -58,7 +58,7 @@ footer {
 }
 
 /* Estilo para dispositivos móviles */
-@media screen and (max-width: 824px) {
+@media screen and (max-width: 833px) {
     .navar {
         display: none;
     }
@@ -105,7 +105,7 @@ footer {
 }
 
 /* Estilo para pantallas más grandes */
-@media screen and (min-width: 824px) {
+@media screen and (min-width: 833px) {
     .menu-button {
         display: none;
     }
