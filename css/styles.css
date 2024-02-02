@@ -13,16 +13,33 @@ body {
 
 .navar {
     list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
     padding: 0;
-    align-items: center;
+    display: flex;
+}
+
+.navar li {
+    margin-right: 15px; 
+}
+
+.navar a {
+    text-decoration: none !important;
+    padding: 20px 20px;
+    background-color: #2c3e50; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navar a:hover {
+    background-color: #507192; 
+    color: #ffffff; 
 }
 
 .boton {
-    background-color: rgba(161, 193, 70, 1);
-    color: white;
+    background-color: #2c3e50;
+    color: #ecf0f1;
     padding: 10px 20px;
     border-width: 1px;
     border-color: #333;
@@ -32,14 +49,7 @@ body {
 }
 
 .boton:hover {
-    background-color: rgba(0, 100, 0, 1);
-}
-
-.navar a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 25px;
-    font-family: 'Lemon', sans-serif;
+    background-color: #507192;
 }
 
 .logo {
