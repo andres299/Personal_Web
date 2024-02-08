@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
             errorElement.textContent = "Por favor, ingresa un correo electrónico válido (por ejemplo: ejemplo@dominio.com)";
         } else {
             errorElement.textContent = "";
+            // Muestra el mensaje de éxito
+            alert("¡El formulario se ha enviado correctamente!");      
         }
     });
 

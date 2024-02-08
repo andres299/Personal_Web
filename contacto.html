@@ -45,15 +45,11 @@
         <h1>FORMULARIO DE CONTACTO</h1>
         <form id="miContacto" method="get" action="index.html">
             <p>
-                <label for="email" class="email">Ingrese un correo electrónico:
-                    <span class="obligatorio"></span>
-                </label>
+                <label for="email" class="email">Ingrese un correo electrónico:</label>
                 <input type="text" name="email" id="email" placeholder="Escribe tu email" required>
                 <span class="error" style="color: red;"></span>
             <p>
-                <label for="mensaje" class="mensaje">Por favor, introduzca su mensaje :
-                    <span class="obligatorio"></span>
-                </label>
+                <label for="mensaje" class="mensaje">Por favor, introduzca su mensaje:</label>
                 <textarea name="mensaje" class="mensaje" id="mensaje" placeholder="Deja aquí tu mensaje..." required></textarea>
             </p>
         
@@ -62,6 +58,10 @@
                 <label for="terminos">Acepto Términos y Servicios</label>
             </p>
         
+            <div id="mensajeExito" class="mensaje-exito" style="display: none;" role="stat">
+                ¡El formulario se ha enviado correctamente!
+            </div>
+
             <button type="submit" class="boton-enviar">Enviar</button>
             <div id="mensajeExito" class="mensaje-exito"></div>
         </form>        
