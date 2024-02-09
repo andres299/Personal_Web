@@ -69,6 +69,11 @@ footer {
     bottom: 0;
 }
 
+footer a {
+    padding-right: 15px;
+    text-decoration: none !important;
+}
+
 /* Estilo para dispositivos móviles */
 @media screen and (max-width: 833px) {
     .navar {
@@ -113,6 +118,18 @@ footer {
 
     #mobile-menu-button {
         cursor: pointer;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+    }
+
+    .social-icons a {
+        margin: 5px;
     }
 }
 
