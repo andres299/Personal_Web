@@ -9,6 +9,10 @@
     margin-bottom: 20px;
 }
 
+.right-content {
+    min-height: 100px; /* Canvia a l'alçada desitjada */
+}
+
 .right-content h1 {
     font-size: 40px;
     font-family: 'Lemon', sans-serif;
