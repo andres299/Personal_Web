@@ -11,7 +11,7 @@
 
 
 .right-content {
-    width: 80%;
+    width: 100%;
     padding: 20px; 
     background-color: #333;
     color: #fff;
@@ -19,9 +19,10 @@
 }
 
 .right-content p {
+    background-color: transparent; 
     font-size: 18px;
     font-family: 'Lao Sans Pro', sans-serif;
-    color: #ffffff;
+    color: #fff;
     text-align: left;
 }
 
@@ -34,7 +35,8 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 20px auto; /* Ajustamos el margen y centrado horizontal */
+    width: 90%; 
 }
 
 .trabajos {
