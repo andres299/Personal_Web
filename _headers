@@ -1,4 +1,5 @@
-/*.html
-  Cache-Control: max-age=345600
 /* 
   Cache-Control: max-age=14400
+
+/*.html
+  Cache-Control: max-age=345600
