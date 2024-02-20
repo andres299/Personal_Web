@@ -1,4 +1,4 @@
 /* .html
-Cache-Control: public, max-age=345600
+Cache-Control: max-age=345600, public
 /* 
-Cache-Control: public, max-age=14400
+Cache-Control: max-age=14400, public
