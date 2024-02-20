@@ -1,0 +1,129 @@
+.center-content {
+  text-align: center;
+  background-color: #d9d9d9;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.right-content h1 {
+  color: #fff;
+  text-align: center;
+  background-color: #333;
+  margin-bottom: 0;
+  padding: 20px 0;
+  font-family: Lemon, sans-serif;
+  font-size: 40px;
+}
+
+.right-content p {
+  color: #333;
+  text-align: left;
+  background-color: #d9d9d9;
+  margin: 0;
+  padding: 10px;
+  font-family: Lao Sans Pro, sans-serif;
+  font-size: 18px;
+}
+
+.left-content img {
+  width: 274px;
+  height: 293px;
+}
+
+.container-trabajo {
+  justify-content: space-around;
+  margin: 20px;
+  display: flex;
+}
+
+.trabajos {
+  text-align: center;
+  background-color: #faeea9;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  box-shadow: 0 1px 6px #0003;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.trabajos h1 {
+  text-align: center;
+  margin-top: 10px;
+  font-family: Alfa Slab One, cursive;
+  font-size: 20px;
+}
+
+.lista {
+  text-align: left;
+  padding: 15px;
+}
+
+.lista li {
+  margin: 5px 0;
+  font-family: Lao Sans Pro, sans-serif;
+  font-size: 15px;
+}
+
+@media screen and (width <= 833px) {
+  .center-content {
+    text-align: center;
+    background-color: #fff;
+    flex-direction: column;
+    margin-left: 0;
+    padding-top: 20px;
+  }
+
+  .right-content h1 {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    font-size: 24px;
+  }
+
+  .right-content p {
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-size: 16px;
+  }
+
+  .left-content img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .container-trabajo {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    display: flex;
+  }
+
+  .trabajos {
+    text-align: center;
+    background-color: #faeea9;
+    border-radius: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 1px 6px #0003;
+  }
+
+  footer {
+    bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=curriculum.997dd772.css.map */

@@ -1,0 +1,86 @@
+.introducion {
+  text-align: center;
+  margin-top: 20px;
+  font-family: Lao Sans Pro, sans-serif;
+  font-size: 20px;
+}
+
+.trabajos h1 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: Alfa Slab One, cursive !important;
+}
+
+.trabajos p {
+  margin-top: 5px;
+  font-family: Lao Sans Pro, sans-serif;
+  font-size: 15px;
+}
+
+.container-trabajo {
+  justify-content: space-around;
+  margin: 20px;
+  display: flex;
+}
+
+.trabajos {
+  text-align: center;
+  background-color: #faeea9;
+  border-radius: 10px;
+  width: 30%;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0 1px 6px #0003;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.trabajos a {
+  font-family: Lemon, sans-serif;
+  font-size: 25px;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+@media screen and (width <= 833px) {
+  .container-trabajo {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    display: flex;
+  }
+
+  .trabajos {
+    text-align: center;
+    background-color: #faeea9;
+    border-radius: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 1px 6px #0003;
+  }
+
+  .trabajos h1 {
+    margin-top: 10px;
+    font-family: Alfa Slab One, cursive;
+    font-size: 20px;
+  }
+
+  footer {
+    bottom: 0;
+  }
+
+  .introducion {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Lao Sans Pro, sans-serif;
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=portafolios.d4752b95.css.map */
